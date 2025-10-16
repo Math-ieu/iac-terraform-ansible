@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List - Gestionnaire de Tâches</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 Ma Liste de Tâches</h1>
+            <p class="subtitle">Organisez votre journée efficacement</p>
+        </header>
+
+        <div class="add-task-form">
+            <input type="text" id="taskTitle" placeholder="Titre de la tâche..." />
+            <textarea id="taskDescription" placeholder="Description (optionnelle)..."></textarea>
+            <div class="form-footer">
+                <select id="taskPriority">
+                    <option value="low">🟢 Basse</option>
+                    <option value="medium" selected>🟡 Moyenne</option>
+                    <option value="high">🔴 Haute</option>
+                </select>
+                <button onclick="addTask()" class="btn-primary">Ajouter</button>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <span class="stat-number" id="totalTasks">0</span>
+                <span class="stat-label">Total</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="completedTasks">0</span>
+                <span class="stat-label">Complétées</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="pendingTasks">0</span>
+                <span class="stat-label">En cours</span>
+            </div>
+        </div>
+
+        <div class="tasks-container" id="tasksContainer">
+            <!-- Les tâches seront ajoutées ici dynamiquement -->
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

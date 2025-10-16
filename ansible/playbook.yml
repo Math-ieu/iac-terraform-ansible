@@ -1,0 +1,8 @@
+---
+- name: Deploy Flask App connected to RDS
+  hosts: flask_server
+  become: yes
+  vars_files:
+    - db_config.json
+  roles:
+    - flask_app

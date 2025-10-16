@@ -1,0 +1,18 @@
+[Unit]
+Description=Flask Application
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/var/www/flask_app
+Environment="PATH=/var/www/flask_app/venv/bin"
+Environment="DB_HOST={{ db_endpoint.value }}"
+Environment="DB_PORT={{ db_port.value }}"
+Environment="DB_NAME={{ db_name.value }}"
+Environment="DB_USER={{ db_username.value }}"
+Environment="DB_PASSWORD={{ db_password.value }}"
+ExecStart=/var/www/flask_app/venv/bin/python app.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

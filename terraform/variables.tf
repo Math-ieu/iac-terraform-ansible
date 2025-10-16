@@ -12,7 +12,7 @@ variable "key_name" {
   description = "Nom de la clé SSH AWS"
   default     = "my-key"
 }
-
+ 
 variable "db_password" {
   description = "Mot de passe pour la base de données RDS"
   type        = string
