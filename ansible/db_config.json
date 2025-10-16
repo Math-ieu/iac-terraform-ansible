@@ -2,12 +2,12 @@
   "db_address": {
     "sensitive": false,
     "type": "string",
-    "value": "terraform-20251016115204360400000001.cxky4ye6asg9.eu-west-3.rds.amazonaws.com"
+    "value": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxeu-west-3.rds.amazonaws.com"
   },
   "db_endpoint": {
     "sensitive": false,
     "type": "string",
-    "value": "terraform-20251016115204360400000001.cxky4ye6asg9.eu-west-3.rds.amazonaws.com:3306"
+    "value": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxeu-west-3.rds.amazonaws.com:3306"
   },
   "db_name": {
     "sensitive": false,
@@ -17,7 +17,7 @@
   "db_password": {
     "sensitive": true,
     "type": "string",
-    "value": "johntheripper"
+    "value": ""
   }, 
   "db_port": {
     "sensitive": false,
@@ -27,11 +27,11 @@
   "db_username": {
     "sensitive": false,
     "type": "string",
-    "value": "admin"
+    "value": ""
   },
   "instance_public_ip": {
     "sensitive": false,
     "type": "string",
-    "value": "51.44.176.223"
+    "value": ""
   }
 }
