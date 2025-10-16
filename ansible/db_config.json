@@ -1,19 +1,24 @@
 {
+  "db_address": {
+    "sensitive": false,
+    "type": "string",
+    "value": "terraform-20251016115204360400000001.cxky4ye6asg9.eu-west-3.rds.amazonaws.com"
+  },
   "db_endpoint": {
     "sensitive": false,
     "type": "string",
-    "value": "terraform-20251014222321843700000002.cxky4ye6asg9.eu-west-3.rds.amazonaws.com:3306"
+    "value": "terraform-20251016115204360400000001.cxky4ye6asg9.eu-west-3.rds.amazonaws.com:3306"
   },
   "db_name": {
     "sensitive": false,
     "type": "string",
-    "value": ""
+    "value": "flaskdb"
   },
   "db_password": {
     "sensitive": true,
     "type": "string",
     "value": "johntheripper"
-  },
+  }, 
   "db_port": {
     "sensitive": false,
     "type": "number",

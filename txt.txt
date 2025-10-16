@@ -1,0 +1,36 @@
+.
+├── ansible
+│   ├── db_config.json
+│   ├── inventory.ini
+│   ├── playbook.yml
+│   └── roles
+│       └── flask_app
+│           ├── tasks
+│           │   └── main.yml
+│           └── templates
+│               ├── flask.service.j2
+│               └── nginx.conf.j2
+├── app
+│   ├── app.py
+│   ├── config.py
+│   ├── requirements.txt
+│   ├── static
+│   │   ├── script.js
+│   │   └── style.css
+│   └── templates
+│       └── index.html
+├── LICENSE
+├── README.md
+├── sample
+│   └── capture.png
+├── terraform
+│   ├── ec2.tf
+│   ├── main.tf
+│   ├── outputs.tf
+│   ├── providers.tf
+│   ├── terraform.tfstate
+│   ├── terraform.tfstate.backup
+│   └── variables.tf
+└── txt.txt
+
+11 directories, 23 files

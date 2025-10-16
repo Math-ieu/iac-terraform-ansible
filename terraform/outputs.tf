@@ -7,6 +7,9 @@ output "db_endpoint" {
   description = "Endpoint de la base de données RDS"
   value       = aws_db_instance.db.endpoint
 }
+output "db_address" {
+  value = aws_db_instance.db.address   # normalement host sans port
+}
 
 output "db_port" {
   value       = aws_db_instance.db.port
